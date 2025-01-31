@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rosybrown;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 50vh;
+  background-color: rgb(207, 175, 175);
+  width: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px;
+}
+
+.main .box {
+  height: 200px;
+  width: 200px;
+  background-image: url(ASSEST/playmobil-bachelor.gif);
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  left: 100px;
+}
+
+.box .text {
+  font-family: "poppins";
+  position: relative;
+  right: 200px;
+}
+
+.box .btn1,
+.box .btn2 {
+  padding: 10px 16px;
+  background-color: brown;
+  border: none;
+  font-family: "poppins";
+  position: relative;
+  bottom: 30px;
+  cursor: pointer;
+  right: 100px;
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 90vh; /* Make the main container smaller for mobile devices */
+    margin: 20px; /* Reduce margin */
+  }
+
+  .box {
+    height: 180px;
+    width: 180px;
+    left: 0;
+  }
+
+  .box .text {
+    font-size: 14px; /* Adjust text size */
+    right: 0;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 8px 14px; /* Smaller padding for buttons */
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 90vw; /* Make the main container smaller for very small screens */
+    margin: 10px;
+  }
+
+  .box {
+    height: 150px;
+    width: 150px;
+  }
+
+  .box .text {
+    font-size: 12px;
+    right: 0;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 6px 12px; /* Further reduce padding on smaller screens */
+    right: 0;
+  }
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
+    height: 100vh;
+    margin: 0;
+}
+
+.main1 {
+    height: 50vh;
+    width: 70vw; /* Adjust to viewport width */
+    background-color: rgb(207, 175, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow */
+}
+
+.main1 .box {
+    height: 200px;
+    width: 200px;
+    background-image: url(/ASSEST/hello.gif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.box .btn {
+    font-family: poppins;
+    background-color: brown;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 106%;
+    left: 35%;
+    padding: 8px 20px;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.btn:hover {
+    background-color: rgb(248, 133, 152);
+    color: wheat;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main1 {
+        height: 60vh;
+        width: 80vw; /* More space on smaller screens */
+    }
+
+    .box {
+        height: 70%;
+        width: 80%;
+    }
+
+    .btn {
+        padding: 8px 15px; /* Smaller padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main1 {
+        height: 70vh;
+        width: 90vw; /* Even more space on very small screens */
+    }
+
+    .box {
+        height: 80%;
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 12px; /* Smaller font size on mobile */
+        padding: 6px 12px; /* Adjusted padding for small screens */
+        top: 110%; /* Adjust the positioning of the button */
+    }
+}
