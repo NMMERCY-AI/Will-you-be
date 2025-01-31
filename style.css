@@ -30,7 +30,7 @@ body {
 .main1 .box {
     height: 200px;
     width: 200px;
-    background-image: url(/ASSEST/hello.gif);
+    background-image:url('ASSEST/hello.gif');
     background-size: cover;
     background-position: center;
     position: relative;
